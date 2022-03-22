@@ -1,0 +1,56 @@
+[
+    {
+        producto: 'Pan',
+        precio: 129.99,
+        medida: 'kg',
+        id: 1
+    },
+      {
+        producto: 'Factura',
+        precio: 59.99,
+        medida: 'unidad',
+        id: 2
+    },
+      {
+        producto: 'Sandwich',
+        precio: 799.99,
+        medida: 'docena',
+        id: 3
+    },
+]{
+	"producto": "criollo",
+	"precio": 69.99,
+	"medida": "kg"
+}{
+	"producto": "criollo",
+	"precio": 69.99,
+	"medida": "kg"
+}{
+	"producto": "criollo",
+	"precio": 69.99,
+	"medida": "kg"
+}{
+	"producto": "criollo",
+	"precio": 69.99,
+	"medida": "kg"
+}{
+	"producto": "criollo",
+	"precio": 69.99,
+	"medida": "kg"
+}{
+	"producto": "criollo",
+	"precio": 69.99,
+	"medida": "kg"
+}{
+	"producto": "criollo",
+	"precio": 69.99,
+	"medida": "kg"
+}{
+	"producto": "criollo",
+	"precio": 69.99,
+	"medida": "kg"
+}{
+	"producto": "criollo",
+	"precio": 69.99,
+	"medida": "kg"
+}
