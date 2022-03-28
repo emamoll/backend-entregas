@@ -1,6 +1,0 @@
-{
-	"producto": "criollo",
-	"precio": 169.99,
-	"medida": "kg",
-	"id": 4
-}
