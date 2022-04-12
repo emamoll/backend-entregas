@@ -1,0 +1,12 @@
+form(method='POST' action="api/productos/agregar") 
+    div 
+        label(for="producto")= 'Producto'
+        input(type="text" name='producto' required)
+    div 
+        label(for="medida")= 'Medida'
+        input(type="text" name='medida' required)
+    div 
+        label(for="precio")= 'Precio'
+        input(type="number" name='precio' required)
+    div 
+        input(type="submit")

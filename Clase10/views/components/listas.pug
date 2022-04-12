@@ -1,0 +1,13 @@
+h1= 'Productos'
+table
+    tr
+        th(id="id")= 'ID'
+        th(id="nombreProducto")= 'Producto'
+        th(id="medidaProducto")= 'Medida'
+        th(id="precioProducto")= 'Precio'
+    each value in productos
+        tr
+            td= value.id
+            td= value.producto
+            td= value.medida 
+            td= value.precio
