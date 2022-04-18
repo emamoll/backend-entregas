@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "producto": "Pan",
+        "precio": 129.99,
+        "medida": "kg"
+    },
+    {
+        "id": 2,
+        "producto": "Factura",
+        "precio": 59.99,
+        "medida": "unidad"
+    },
+    {
+        "id": 3,
+        "producto": "Sandwich",
+        "precio": 799.99,
+        "medida": "docena"
+    }
+]
