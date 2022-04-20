@@ -68,8 +68,8 @@ myWSServer.on('connection', function (socket) {
         };
 
         usuarios.push(nuevoUsuario)
-        console.log(usuarios);
-        myWSServer.emit('users', nuevoUsuario);
+        console.log('usuarios',usuarios);
+        myWSServer.emit('users', usuarios);
     })
 
     socket.on('new-message', function (data) {
@@ -86,5 +86,10 @@ myWSServer.on('connection', function (socket) {
     socket.on('askData', (data) => {
         console.log('ME LLEGO DATA');
         socket.emit('products', productos);
+        socket.emit('users', usuarios);
+        socket.emit('messages', messages);
     });
 });
+
+
+        
