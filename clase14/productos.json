@@ -1,0 +1,56 @@
+[
+	{
+		"id": "64270cd6-19b5-47d7-b43b-c76a27fde057",
+		"timestamp": "2022-04-25T22:33:41.807Z",
+		"nombre": "Pan",
+		"descripcion": "a",
+		"codigo": "00001",
+		"imagen": "a",
+		"precio": 220,
+		"medida": "kg",
+		"stock": 100
+	},
+	{
+		"id": "78598ad7-be58-4c7d-89ff-05ce53446025",
+		"timestamp": "2022-04-25T22:33:59.970Z",
+		"nombre": "Criollos",
+		"descripcion": "b",
+		"codigo": "00002",
+		"imagen": "b",
+		"precio": 320,
+		"medida": "kg",
+		"stock": 100
+	},
+	{
+		"id": "78598ad7-be58-4c7d-89ff-05ce53446024",
+		"timestamp": "2022-04-25T23:55:08.314Z",
+		"nombre": "Facturas",
+		"descripcion": "c",
+		"imagen": "c",
+		"precio": 600,
+		"medida": "doc",
+		"stock": 100
+	},
+	{
+		"id": "305cca03-7d9e-4fb6-bab5-5b9c208b3465",
+		"timestamp": "2022-04-25T23:55:08.314Z",
+		"nombre": "Galletas",
+		"descripcion": "d",
+		"codigo": "00004",
+		"imagen": "d",
+		"precio": 750,
+		"medida": "doc",
+		"stock": 100
+	},
+	{
+		"id": "e0164dcf-ca82-44d4-be88-a253f3c6ce15",
+		"timestamp": "2022-04-26T00:12:52.679Z",
+		"nombre": "Alfajores",
+		"descripcion": "e",
+		"codigo": "00005",
+		"imagen": "e",
+		"precio": 1000,
+		"medida": "doc",
+		"stock": 100
+	}
+]
