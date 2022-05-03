@@ -1,0 +1,12 @@
+form(method='POST' action="api/productos/agregar" id="formulario") 
+    div 
+        label(for="producto")= 'Producto'
+        input(type="text" name='producto' id="producto" required)
+    div 
+        label(for="medida")= 'Medida'
+        input(type="text" name='medida' id="medida" required)
+    div 
+        label(for="precio")= 'Precio'
+        input(type="number" name='precio' id="precio" required)
+    div 
+        button(onclick="enviarProducto(this)")="ENVIAR"
