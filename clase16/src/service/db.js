@@ -3,10 +3,10 @@ const dbConfig = require('../../knexfile')
 
 class DB {
     constructor() {
-        // const environment = process.env.NODE_ENV || 'production';
-        // console.log(`Setting ${environment} DB`);
-        // const options = dbConfig[environment];
-        this.connection = knex(dbConfig['production'])
+        const environment = process.env.NODE_ENV || 'production';
+        console.log(`Setting ${environment} DB`);
+        const options = dbConfig[environment];
+        this.connection = knex(options)
     };
 
      async init() {
