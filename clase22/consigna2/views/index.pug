@@ -1,0 +1,14 @@
+
+html 
+    head 
+        title  Desafio 22
+    body 
+        h1= 'CHAT'
+        include components/formulario
+        include components/chat
+        script(src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js") 
+        script(src="/socket.io/socket.io.js" defer)
+        script(type="module" src="./socketService.js")
+        script(type="module" src="./normalizer.js" defer)  
+        script(type="module" src="./sendMessage.js" defer)
+        script(type="module" src="./main.js" defer)

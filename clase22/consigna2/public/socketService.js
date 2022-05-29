@@ -1,25 +1,25 @@
-import { denormalizeData } from './normalizer';
+import { denormalizeData } from "./normalizer.js";
 
 export const socket = io();
 
-const contenedorVistaMensaje = document.getElementById('contenedorVistaMensaje');
+const mensajesContenedor = document.getElementById('mensajesContenedor');
 
-socket.on('recibirMensajes', (mensaje) => {
+socket.on('recibiMensaje', (mensajes) => {
     console.log('Respuesta');
-    console.log(mensaje);
+    console.log(mensajes);
 
-    console.log('Data desnormalizada');
-    
-    const desnormalizedData = desnormalizeData(mensaje);
-    console.log(desnormalizedData);
+    console.log('Data denormalizada');
+    const denormalizedData = denormalizeData(mensajes);
+    console.log(denormalizedData);
 
-    desnormalizedData.forEach(msg => {
-        let divMensajes = document.createElement('div');
-        p.innerHTML= `
-            <p class="horaMensaje">${msg.author.email}</p>
-            <p class="usuarioMensaje">${msg.author.nombre}</p>
-            <p>${msg.text}</p>
-        `
-        contenedorVistaMensaje.appendChild(divMensajes)
+    denormalizedData.forEach(mensaje => {
+        let divMsg = document.createElement('div');
+        divMsg.innerHTML = `
+            <p>${mensaje.author.email}</p>
+            <p>${mensaje.author.nombre}</p>
+            <p>${mensaje.text}</p>
+        `;
+
+        mensajesContenedor.appendChild(divMsg);
     });
-})
+});

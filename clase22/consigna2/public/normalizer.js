@@ -1,20 +1,21 @@
-const {schema, denormalize} = normalizr;
+const { schema, denormalize } = normalizr;
 
-const author = new schema.Entity('author', {}, { idAttribute: 'email' });
-
-const msge = new schema.Entity(
-  'message',
-  {
-    author: author,
-  },
-  { idAttribute: '_id' }
+const author = new schema.Entity(
+    'author',
+    {},
+    { idAttribute: 'email' }
 );
 
-export const finalSchema = new schema.Array(msge);
+const msg = new schema.Entity(
+    'message',
+    {},
+    { idAttribute: '_id' }
+);
 
+export const finalSchema = new schema.Array(msg);
 
-export function denormalizeData (data) {
-	const denormalizedData = denormalize(data.result, finalSchema, data.entities);
+export const denormalizeData = (data) => {
+    const denormalizedData = denormalize(data.resutl, finalSchema, data.entities);
 
-	return denormalizedData;
-}
+    return denormalizedData;
+};

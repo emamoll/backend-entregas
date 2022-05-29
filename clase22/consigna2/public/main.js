@@ -1,5 +1,5 @@
-import { sendMessage } from './sendMessage';
+import { sendMessage } from './sendMessage.js';
 
-const formularioMsj = document.getElementById('formularioMsj');
+const formMensaje = document.getElementById('formMensaje');
 
-formularioMsj.addEventListener('submit', sendMessage);
+formMensaje.addEventListener('submit', sendMessage);
