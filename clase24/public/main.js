@@ -1,6 +1,6 @@
 const formLogin = document.getElementById('formLogin');
 
-formLogin.addEventListener('submit', (e) => {
+formLogin.addEventListener('post', (e) => {
     e.preventDefault();
     console.log('click');
 });

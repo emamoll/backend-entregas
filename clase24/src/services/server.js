@@ -60,16 +60,21 @@ app.post('/login', (req, res) => {
             name: user.name
         };
     
-        res.json({ 
-            msg: `Bienvenido ${user.name}`
-        });
+        res.redirect('/ingreso');
 
         
     };
 });
 
-app.get('/ingreso', (req, res) => {
-    res.json({ msg: `Bienvenido ${req.session.info.name}`})
-})
+const validateLogin = (req, res, next) => {
+    if(req.session.info && req.session.info.loggedIn)
+        next();
+    else    
+        res.status(401).json({ msg: 'No estas autorizado' });
+};
+
+app.get('/ingreso', validateLogin, (req, res) => {
+    res.render('ingreso');
+});
 
 export default app;
