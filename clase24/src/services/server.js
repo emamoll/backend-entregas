@@ -74,7 +74,9 @@ const validateLogin = (req, res, next) => {
 };
 
 app.get('/ingreso', validateLogin, (req, res) => {
-    res.render('ingreso');
+    res.render('ingreso', {
+        datos: users.find((usuario) => usuario.name === req.session.info.name),
+    });
 });
 
 export default app;

@@ -3,13 +3,13 @@ import { UserModel } from "../models/user";
 
 const router = Router();
 
-router.get("/", async (req, res) => {
+router.get('/', async (req, res) => {
   const data = await UserModel.find();
 
-  res.json({ data });
+  res.render('login');
 });
 
-router.post("/", async (req, res) => {
+router.post('/', async (req, res) => {
   const { email, password } = req.body;
 
   if (!email || !password) {

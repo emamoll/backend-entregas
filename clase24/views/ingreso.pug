@@ -2,5 +2,6 @@ html
     head 
         title= 'Desafio 24'
     body 
-        h1= 'Bienvenido'
-        script(type="module" src="./main.js" defer) 
+        h1= `Bienvenido ${datos.name}`
+        div 
+            button(onclick="location.href = '/login'")= 'Salir'

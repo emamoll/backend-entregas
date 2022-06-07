@@ -13,7 +13,7 @@ router.post(
   "/login",
   passport.authenticate("login", passportOptions),
   (req, res) => {
-    res.render({ message: `Bienvenido ${req.user}` });
+    res.json({ message: `Bienvenido ${req.user}` });
   }
 );
 
