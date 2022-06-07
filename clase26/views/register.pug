@@ -1,0 +1,16 @@
+html 
+    head 
+        title= 'Register'
+    body 
+        h1= 'Register'
+        form(action="/register", method="post", role="form", autocomplete="off")
+            div 
+                input(type="text", id="nombre", name="nombre", placeholder="nombre", required) 
+            div 
+                input(type="text", id="password", name="password", placeholder="password", required)
+            div 
+                input(type="text", id="direccion", name="direccion", placeholder="direccion", required)
+            div 
+                input(type="submit", value="Register")
+        div 
+            button(onclick="location.href = '/login'")= 'Ir a login'
