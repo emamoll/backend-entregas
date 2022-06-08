@@ -1,8 +1,5 @@
 div         
     h1='User ok login'
-    h2= `Bienvenido ${datos.nombre}`
+    h2= `Bienvenido ${datos.email}`
     br
-    h3= `Direccion: ${datos.direccion}`
-    h4= `visitas: ${contador}`
-    br
-    button(onclick="location.href = '/logout'")= 'Logout'
+    button(onclick="location.href = '/api/logout'")= 'Logout'

@@ -14,7 +14,7 @@ const login = async (req, email, password, done) => {
   const user = await UserModel.findOne({ email });
 
   if (!user || !user.isValidPassword(password))
-    return done(null, false, { mesage: "Email o contrasenia invalidos" });
+    return done(null, false, { message: "Email o contrasenia invalidos" });
   else {
     console.log("Todo ok");
 
