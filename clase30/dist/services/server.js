@@ -4,18 +4,21 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
+const __1 = require("..");
+const __2 = require("..");
 const app = (0, express_1.default)();
 app.get('/', (req, res) => {
     console.log('Resolving / endpoint');
     res.json({
         pid: process.pid,
-        msg: `Hola desde puerto `,
+        procesadores: __1.numCPUs,
+        msg: `Hola desde puerto ${__2.puerto}`,
     });
 });
 app.get('/api/randoms', (req, res) => {
     res.json({
         pid: process.pid,
-        msg: `Hola desde puerto `,
+        msg: `Hola desde puerto ${__2.puerto}`,
     });
 });
 app.get('/slow', (req, res) => {

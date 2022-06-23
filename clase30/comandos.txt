@@ -1,0 +1,6 @@
+npm run start --modo "cluster"
+forever start dist/index.js
+forever stopall
+pm2 start dist/index.js --watch
+pm2 start dist/index.js --watch -i max
+pm2 delete all

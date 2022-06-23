@@ -3,9 +3,11 @@ import os from 'os';
 import Server from './services/server';
 import { args } from './arguments';
 
+export const puerto = args.puerto || 8080;
+
 // Obtengo el numero de nucleos disponibles en mi PC
 
-const numCPUs = os.cpus().length;
+export const numCPUs = os.cpus().length;
 
 console.log(args);
 
@@ -28,8 +30,6 @@ if (modoCluster && cluster.isPrimary) {
     });
 } else {
     // Workers
-
-    const puerto = 8080;
 
     Server.listen(puerto, () => {
         console.log(`Servidor escuchando en el puerto ${puerto} - PID WORKER ${process.pid}`);        

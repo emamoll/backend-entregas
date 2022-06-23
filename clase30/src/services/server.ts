@@ -1,4 +1,6 @@
 import express from 'express';
+import { numCPUs } from '..';
+import { puerto } from '..';
 
 const app = express();
 
@@ -7,14 +9,15 @@ app.get('/', (req, res) => {
     
     res.json({
         pid: process.pid,
-        msg: `Hola desde puerto `,
+        procesadores: numCPUs, 
+        msg: `Hola desde puerto ${puerto}`,
     });
 });
 
 app.get('/api/randoms', (req, res) => {    
     res.json({
         pid: process.pid,
-        msg: `Hola desde puerto `,
+        msg: `Hola desde puerto ${puerto}`,
     });
 });
 
