@@ -1,0 +1,7 @@
+
+[33mwarn[39m | 27-Jun-2022 21:26:36 | Is authenticated
+[33mwarn[39m | 27-Jun-2022 21:26:36 | false
+{"level":"error","message":"Error en el servidor: Error: listen EADDRINUSE: address already in use :::8080"}
+{"level":"error","message":"Error en el servidor: Error: listen EADDRINUSE: address already in use :::8080"}
+[31merror[39m | 27-Jun-2022 21:43:34 | Error en el servidor: Error: listen EADDRINUSE: address already in use :::8080
+[31merror[39m | 27-Jun-2022 21:59:57 | Error en el servidor: Error: listen EADDRINUSE: address already in use :::8080
